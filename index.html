@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/responsive.css">
+    <script src="java-script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+</head>
+
+<body>
+    <header class="head">
+        <button class="fixed-icon"><i class="fas fa-cog"></i></button>
+        <div class="header-body">
+            <img src="img/logo.png" class="logo" alt="">
+
+            <div class="nav-icon">
+                <ul class="nav-list">
+                    <li><a class="nav-link" href="#">Home</a></li>
+                    <li class="dropdown-1">
+                        <a class="nav-link" href="#">Features</a>
+                        <button class="right-icon-1" onclick="subMenu_1_Toggle(0)"> <i class="fas fa-chevron-right"></i></button>
+                        
+                        <div class="sub-menu sub-menu-1">
+                            <ul>
+                                <li class="dropdown-2">
+                                    <a href="#" class="sub-link sub-link-1">
+                                        <i class="fas fa-tasks sm-icon"></i> Sliders
+                                    </a>
+                                    <button class="right-icon" onclick="subMenu_2_Toggle(0)"><i class="fas fa-chevron-right"></i></button>
+                                    <div class="sub-menu sub-menu-2">
+                                        <ul>
+                                            <li><a href="#" class="sub-link sub-link-2">Revolution Slider</a></li>
+                                            <li><a href="#" class="sub-link sub-link-2">Flex Slider</a></li>
+                                            <li><a href="#" class="sub-link sub-link-2">Owl Slider</a></li>
+                                            <li><a href="#" class="sub-link sub-link-2">Static Media</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="dropdown-2">
+                                    <a href="#" class="sub-link sub-link-1">
+                                        <i class="fas fa-umbrella sm-icon"></i> Headers
+                                    </a>
+                                    <button class="right-icon" onclick="subMenu_2_Toggle(1)"><i class="fas fa-chevron-right"></i></button>
+                                    <div class="sub-menu sub-menu-2">
+                                        <ul>
+                                            <li><a href="#" class="sub-link sub-link-2">Lite Version</a></li>
+                                            <li><a href="#" class="sub-link sub-link-2">Dark Version</a></li>
+                                            <li><a href="#" class="sub-link sub-link-2">Transparent</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="dropdown-2">
+                                    <a href="#" class="sub-link sub-link-1">
+                                        <i class="fas fa-align-justify sm-icon"></i> Menu Styles
+                                    </a>
+                                    <button class="right-icon" onclick="subMenu_2_Toggle(2)"><i class="fas fa-chevron-right"></i></button>
+                                    <div class="sub-menu sub-menu-2">
+                                        <ul>
+                                            <li><a href="#" class="sub-link sub-link-2">Defult Layout</a></li>
+                                            <li><a href="#" class="sub-link sub-link-2">Alternate Layout</a></li>
+                                            <li><a href="#" class="sub-link sub-link-2">Split Layout</a></li>
+                                            <li><a href="#" class="sub-link sub-link-2">Layout 1</a></li>
+                                            <li><a href="#" class="sub-link sub-link-2">Layout 2</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#" class="sub-link sub-link-1"><i class="fab fa-wpforms sm-icon"></i>
+                                        Forms</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sub-link sub-link-1"><i class="fas fa-gift sm-icon"></i>
+                                        Widgets</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sub-link sub-link-1"><i class="fas fa-check-circle sm-icon"></i>
+                                        Page titles</a>
+                                </li>
+                                <li class="dropdown-2">
+                                    <a href="#" class="sub-link sub-link-1">
+                                        <i class="fab fa-buromobelexperte sm-icon"></i> Footers                                      
+                                    </a>
+                                    <button class="right-icon" onclick="subMenu_2_Toggle(3)"><i class="fas fa-chevron-right"></i></button>
+                                    <div class="sub-menu sub-menu-2">
+                                        <ul>
+                                            <li><a href="#" class="sub-link sub-link-2">Sticky</a></li>
+                                            <li><a href="#" class="sub-link sub-link-2">Layout 1</a></li>
+                                            <li><a href="#" class="sub-link sub-link-2">Layout 2</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    
+                    <li class="dropdown-1">
+                        <a class="nav-link" href="#">Portfolio</a>
+                        <button class="right-icon-1" onclick="subMenu_1_Toggle(1)"> <i class="fas fa-chevron-right"></i></button>
+
+                        <div class="sub-menu sub-menu-1">
+                            <ul>
+                                <li><a href="#" class="sub-link sub-link-1">Grids</a></li>
+                                <li><a href="#" class="sub-link sub-link-1">Masonry</a></li>
+                                <li><a href="#" class="sub-link sub-link-1">Loading Styles</a></li>
+                                <li><a href="#" class="sub-link sub-link-1">Layouts</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a class="nav-link" href="#">Blog</a></li>
+                    <li><a class="nav-link" href="#">Shop</a></li>
+                </ul>
+
+                <div class="menu-icon-sec">
+                    <i class="fas fa-search"></i>
+                    <i class="fas fa-shopping-bag"></i>
+                    <button class="menu-btn" onclick="menuFunction()"><i class="fas fa-bars"></i></button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Welcome to canvas</h1>
+            <p class="hero-intro">Create just what you need for your Perfect Website. Choose from a wide range of
+                Elements & simply put them on our Canvas. </p>
+        </div>
+    </section>
+
+    <section class="under-hero">
+        <div class="uh-container container">
+            <div>
+                <h3 class="uh-title">Try Premium Free for <b>30 Days</b> and you'll never regret it!</h3>
+                <span class="uh-text">Starts at just <i>$0/month</i> afterwards. No Ads, No Gimmicks and No SPAM. Just
+                    Real Content.</span>
+            </div>
+            <div>
+                <button class="trail-button" type="submit">Start trail</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="feature-box container">
+        <div class="item">
+            <div class="round-icon">
+                <div class="icon-div">
+                    <i class="fas fa-store f-icon"></i>
+                </div>
+            </div>
+
+            <h3>E-COMMERCE SOLUTIONS</h3>
+            <span>Start your Own Shop today</span>
+        </div>
+        <div class="item">
+            <div class="round-icon">
+                <div class="icon-div">
+                    <i class="fas fa-wallet f-icon"></i>
+                </div>
+            </div>
+            <h3>EASY PAYMENT OPTIONS</h3>
+            <span>Credit Cards & PayPal Support</span>
+        </div>
+        <div class="item">
+            <div class="round-icon">
+                <div class="icon-div">
+                    <i class="fas fa-bullhorn f-icon"></i>
+                </div>
+            </div>
+            <h3>INSTANT NOTIFICATIONS</h3>
+            <span>Realtime Email & SMS Support</span>
+        </div>
+        <div class="item">
+            <div class="round-icon">
+                <div class="icon-div">
+                    <i class="fas fa-fire f-icon"></i>
+                </div>
+            </div>
+            <h3>HOT OFFERS DAILY</h3>
+            <span>Upto 50% Discounts</span>
+        </div>
+    </section>
+
+    <section class="gpep-sction container">
+        <img src="img/1 (2).jpg" alt="">
+        <div class="gpep">
+            <div class="heading-block">
+                <h2>GLOBALLY PREFERRED ECOMMERCE PLATFORM</h2>
+            </div>
+            <p>Worldwide John Lennon, mobilize humanitarian; emergency response donors; cause human experience effect.
+                Volunteer Action Against Hunger Aga Khan safeguards women's.</p>
+
+            <div class="row4-col2">
+                <ul>
+                    <li>Responsive Ready Layout</li>
+                    <li>Retina Display Supported</li>
+                    <li>Powerful & Optimized Code</li>
+                    <li>380+ Templates Included</li>
+                </ul>
+                <ul>
+                    <li>12+ Headers & Menu Designs</li>
+                    <li>Premium Sliders Included</li>
+                    <li>Light & Dark Colors</li>
+                    <li>e-Commerce Design Included</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <div class="heading-block center">
+                <h2>FEATURES THAT YOU ARE GONNA LOVE</h2>
+                <span>Canvas comes with 100+ Feature oriented Shortcodes that are easy to use too.</span>
+            </div>
+
+            <div class="feature-item">
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div class="feature-text">
+                        <h3>RESPONSIVE LAYOUT</h3>
+                        <p>Powerful Layout with Responsive functionality that can be adapted to any screen size.</p>
+                    </div>
+                </div>
+
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <div class="feature-text">
+                        <h3>RETINA READY GRAPHICS</h3>
+                        <p>Looks beautiful & ultra-sharp on Retina Displays with Retina Icons, Fonts & Images.</p>
+                    </div>
+                </div>
+
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="feature-text">
+                        <h3>POWERFUL PERFORMANCE</h3>
+                        <p>Optimized code that are completely customizable and deliver unmatched fast performance.</p>
+                    </div>
+                </div>
+
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <div class="feature-text">
+                        <h3>HTML5 VIDEO</h3>
+                        <p>Canvas provides support for Native HTML5 Videos that can be added to a Full Width Background.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-sliders-h"></i>
+                    </div>
+                    <div class="feature-text">
+                        <h3>PARALLAX SUPPORT</h3>
+                        <p>Display your Content attractively using Parallax Sections that have unlimited customizable
+                            areas.</p>
+                    </div>
+                </div>
+
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-fire"></i>
+                    </div>
+                    <div class="feature-text">
+                        <h3>ENDLESS POSSIBILITIES</h3>
+                        <p>Complete control on each & every element that provides endless customization possibilities.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="far fa-lightbulb"></i>
+                    </div>
+                    <div class="feature-text">
+                        <h3>LIGHT & DARK COLOR SCHEMES</h3>
+                        <p>Change your Website's Primary Scheme instantly by simply adding the dark class to the body.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="far fa-heart"></i>
+                    </div>
+                    <div class="feature-text">
+                        <h3>BOXED & WIDE LAYOUTS</h3>
+                        <p>Stretch your Website to the Full Width or make it boxed to surprise your visitors.</p>
+                    </div>
+                </div>
+
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="far fa-file-alt"></i>
+                    </div>
+                    <div class="feature-text">
+                        <h3>EXTENSIVE DOCUMENTATION</h3>
+                        <p>We have covered each & everything in our Documentation including Videos & Screenshots.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="work container">
+        <div class="heading-block center">
+            <h2>SOME OF OUR <b>FEATURED</b> WORKS</h2>
+            <span>We have worked on some Awesome Projects that are worth boasting of.</span>
+        </div>
+        <div class="work-sample">
+            <div class="sample">
+                <div class="img-container">
+                    <img src="img/1 (3).jpg" class="image" alt="">
+                    <div class="overlay">
+                        <i class="fas fa-plus"></i>
+                    </div>
+                </div>
+                <a href="">Open Imagination</a>
+                <a href="">Media, Icons</a>
+            </div>
+            <div class="sample">
+                <div class="img-container">
+                    <img src="img/2.jpg" class="image" alt="">
+                    <div class="overlay">
+                        <i class="fas fa-plus"></i>
+                    </div>
+                </div>
+                <a href="">Locked Steel Gate</a>
+                <a href="">Illustrations</a>
+            </div>
+            <div class="sample">
+                <div class="img-container">
+                    <img src="img/6 (1).jpg" class="image" alt="">
+                    <div class="overlay">
+                        <i class="fas fa-plus"></i>
+                    </div>
+                </div>
+                <a href="">Shake It!</a>
+                <a href="">Illustrations, Graphics</a>
+            </div>
+            <div class="sample">
+                <div class="img-container">
+                    <img src="img/7.jpg" class="image" alt="">
+                    <div class="overlay">
+                        <i class="fas fa-plus"></i>
+                    </div>
+                </div>
+                <a href="">Backpack Contents</a>
+                <a href="">UI Elements, Icons</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <div class="heading-block center">
+                <h2>TESTIMONIALS</h2>
+                <span>Check out some of our Client Reviews</span>
+            </div>
+            <div class="testimonial-block">
+                <div class="block block1">
+                    <div class="block-img">
+                        <img src="img/1 (5).jpg" alt="">
+                    </div>
+                    <div class="block-text">
+                        <i>&#8243;Incidunt deleniti blanditiis quas aperiam recusandae consequatur ullam quibusdam cum
+                            libero illo rerum repellendus!&#8243;</i>
+                        <h3>-JOHN DOE</h3>
+                        <span>XYZ Inc.</span>
+                    </div>
+                </div>
+                <div class="block block2">
+                    <div class="block-img">
+                        <img src="img/2 (2).jpg" alt="">
+                    </div>
+                    <div class="block-text">
+                        <i>&#8243;Natus voluptatum enim quod necessitatibus quis expedita harum provident eos obcaecati
+                            id culpa corporis molestias.&#8243;</i>
+                        <h3>-COLLIS TA'EED</h3>
+                        <span>Envato Inc.</span>
+                    </div>
+                </div>
+                <div class="block block3">
+                    <div class="block-img">
+                        <img src="img/7 (1).jpg" alt="">
+                    </div>
+                    <div class="block-text">
+                        <i>&#8243;Fugit officia dolor sed harum excepturi ex iusto magnam asperiores molestiae qui natus
+                            obcaecati facere sint amet.&#8243;</i>
+                        <h3>-MARY JANE</h3>
+                        <span>Google Inc.</span>
+                    </div>
+                </div>
+                <div class="block block4">
+                    <div class="block-img">
+                        <img src="img/3 (2).jpg" alt="">
+                    </div>
+                    <div class="block-text">
+                        <i>&#8243;Similique fugit repellendus expedita excepturi iure perferendis provident quia eaque.
+                            Repellendus, vero numquam?&#8243;</i>
+                        <h3>-STEVE JOBS</h3>
+                        <span>Apple Inc.</span>
+                    </div>
+                </div>
+                <div class="block block5">
+                    <div class="block-img">
+                        <img src="img/4 (2).jpg" alt="">
+                    </div>
+                    <div class="block-text">
+                        <i>&#8243;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, perspiciatis illum
+                            totam dolore deleniti labore.&#8243;</i>
+                        <h3>-JAMIE MORRISON</h3>
+                        <span>Adobe Inc.</span>
+                    </div>
+                </div>
+                <div class="block block6">
+                    <div class="block-img">
+                        <img src="img/8 (2).jpg" alt="">
+                    </div>
+                    <div class="block-text">
+                        <i>&#8243;Porro dolorem saepe reiciendis nihil minus neque. Ducimus rem necessitatibus repellat
+                            laborum nemo quod.&#8243;</i>
+                        <h3>-CYAN TA'EED</h3>
+                        <span>Tutsplus</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="check-out">
+        <div class="container">
+            <p>Canvas comes with Unlimited Customizations & Options. <a href="#">Check Out</a>
+                <i class="fas fa-caret-right"></i></p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-body container">
+            <div class="address">
+                <img src="img/footer-widget-logo.png" alt="">
+                <p>We believe in <b>Simple</b>, <b>Creative</b> & <b>Flexible</b> Design Standards.</p>
+                <div class="addrs">
+                    <div class="addrs1">
+                        <p>Headquarters:</p>
+                        <p>795 Folsom Ave, Suite 600</p>
+                        <p>San Francisco, CA 94107</p>
+                    </div>
+                    <div class="addrs2">
+                        <p><b>Phone</b>: (1) 8547 xxxxxx</p>
+                        <p><b>Fax</b>: (1) 11 4752 xxxx</p>
+                        <p><b>Email</b>: xxx@canvas.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="blogroll">
+                <h4>BLOGROLL</h4>
+                <ul>
+                    <li><i class="fas fa-chevron-right"></i> <a href="#" class="link">Documentation</a></li>
+                    <li><i class="fas fa-chevron-right"></i> <a href="#" class="link">Feedback</a></li>
+                    <li><i class="fas fa-chevron-right"></i> <a href="#" class="link">Plugins</a></li>
+                    <li><i class="fas fa-chevron-right"></i> <a href="#" class="link">Support Forums</a></li>
+                    <li><i class="fas fa-chevron-right"></i> <a href="#" class="link">Themes</a></li>
+                    <li><i class="fas fa-chevron-right"></i> <a href="#" class="link">Canvas Blog</a></li>
+                    <li><i class="fas fa-chevron-right"></i> <a href="#" class="link">Canvas Planet</a></li>
+                </ul>
+            </div>
+
+            <div class="recent-post">
+                <h4>RECENT POSTS</h4>
+
+                <a href="">Lorem ipsum dolor sit amet, consectetur</a>
+                <span>10th July 2021</span>
+
+                <a href="">Elit Assumenda vel amet dolorum quasi</a>
+                <span>10th July 2021</span>
+
+                <a href="">Debitis nihil placeat, illum est nisi</a>
+                <span>10th July 2021</span>
+            </div>
+
+            <div class="last">
+                <div class="counter">
+                    <div class="dounloads">
+                        <span class="number-count">15,065,421</span>
+                        <span class="count-title">TOTAL DOWNLOADS</span>
+                    </div>
+                    <div class="clients">
+                        <span class="number-count">18,465</span>
+                        <span class="count-title">CLIENTS</span>
+                    </div>
+                </div>
+
+                <p>Subscribe to Our Newsletter to get Important News, Amazing Offers & Inside Scoops:</p>
+                <div class="input-group">
+                    <i class="fas fa-paper-plane input-icon"></i>
+                    <input class="input-email" type="email" name="" id="" placeholder="Enter your Email">
+                    <button class="subscribe-btn" type="submit">Subscribe</button>
+                </div>
+
+                <div class="sort-social">
+                    <div class="fb">
+                        <i class="fab fa-facebook-f"></i>
+                        <span>Like us <br>on Facebook</span>
+                    </div>
+                    <div class="rss-feed">
+                        <i class="fas fa-rss"></i>
+                        <span>Subscribe to <br> RSS Feed</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="copyright">
+        <div class="copyright-body container">
+            <div class="copyright-part">
+                <p>Copyrights © 2020 All Rights Reserved by Canvas Inc.</p>
+                <p><a href="#">Terms of Use</a> / <a href="#">Privacy Policy</a></p>
+            </div>
+            <div class="social-part">
+                <div class="social-icon">
+                    <a href=""> <i class="fab fa-facebook-f fb-icon"></i></a>
+                    <a href=""><i class="fab fa-twitter twitter-icon"></i></a>
+                    <a href=""><i class="fab fa-google-plus-g gplus-icon"></i></a>
+                    <a href=""><i class="fab fa-pinterest pinterest-icon"></i></a>
+                    <a href=""> <i class="fab fa-vimeo vimeo-icon"></i></a>
+                    <a href=""> <i class="fab fa-github github-icon"></i></a>
+                    <a href=""><i class="fab fa-yahoo yahoo-icon"></i></a>
+                    <a href=""><i class="fab fa-linkedin linkedin-icon"></i></a>
+                </div>
+                <p><i class="fas fa-envelope"></i> info@canvas.com · <i class="fas fa-headphones"></i> +1-11-6541-6369 ·
+                    <i class="fab fa-skype"></i> CanvasOnSkype</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+</body>
+
+</html>
