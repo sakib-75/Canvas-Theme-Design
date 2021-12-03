@@ -189,6 +189,10 @@
             border-bottom: 1px dashed #ddd;
         }
 
+        .check-out p {
+            font-size: 26px;
+        }
+
         /* ............Footer.............*/
         .footer-body {
             grid-template-columns: auto;
