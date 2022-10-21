@@ -1,4 +1,5 @@
 # Canvas theme design
 
-<a href="https://canvas-theme-sakib.netlify.app/"><h2> Click here to visit this site </h2></a>
+
+[Click here to visit this site](https://canvas-theme-sakib.netlify.app)
 
